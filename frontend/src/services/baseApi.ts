@@ -1,7 +1,7 @@
 import { fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const baseApi = fetchBaseQuery({
-  baseUrl: 'http://localhost:3000/',
+  baseUrl: 'https://postit-job-board.onrender.com',  //after successful backend deployment
 
   prepareHeaders: (headers) => {
     const token = localStorage.getItem('token')
