@@ -6,6 +6,8 @@ export class FirebaseService {
 
   private firebaseApp: admin.app.App
 
+  public db: FirebaseFirestore.Firestore
+
   constructor() {
 
     if (!admin.apps.length) {
@@ -34,6 +36,9 @@ export class FirebaseService {
       this.firebaseApp =
         admin.app()
     }
+
+    this.db =
+      admin.firestore()
   }
 
   getAuth() {
