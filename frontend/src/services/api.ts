@@ -9,7 +9,7 @@ export const api = createApi({
 
   baseQuery: fetchBaseQuery({
     baseUrl:
-      'http://localhost:3000',
+      'https://postit-job-board.onrender.com',
       
     prepareHeaders: (
       headers,
